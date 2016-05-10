@@ -30,6 +30,7 @@ import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.gmail.justbru00.epic.punish.commands.EpicPunish;
+import com.gmail.justbru00.epic.punish.commands.Punish;
 import com.gmail.justbru00.epic.punish.utils.Messager;
 
 public class Main extends JavaPlugin {
@@ -52,6 +53,7 @@ public class Main extends JavaPlugin {
 		
 		// Command Executors
 				getCommand("epicpunish").setExecutor(new EpicPunish(this));
+				getCommand("punish").setExecutor(new Punish(this));
 				
 				
 				// Register Listeners
